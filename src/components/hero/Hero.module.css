@@ -1,0 +1,19 @@
+/* Hero.module.css */
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .left {
+        order: 2;
+    }
+
+    .right {
+        order: 1;
+    }
+}
