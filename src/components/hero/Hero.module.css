@@ -18,13 +18,25 @@
     }
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-top: 500px solid transparent;
-    /* Set the height of the triangle */
-    border-bottom: 500px solid transparent;
-    /* Set the height of the triangle */
-    border-right: 250px solid red;
-    /* Set the width of the triangle and its color */
+.recta {
+    width: 500px;
+    height: 500px;
+    border-radius: 0% 0% 50% 20% !important;
+}
+
+@media (max-width:800px) {
+    .recta {
+        width: 310px;
+        height: 350px;
+        border-radius: 0% 0% 50% 20% !important;
+    }
+
+    .gappens {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .flexonee {
+        /* flex: 1; */
+    }
 }
