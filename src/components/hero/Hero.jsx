@@ -7,7 +7,7 @@ const HeroSection = () => {
             <div className="bg-cover bg-center h-screen relative" style={{ backgroundImage: "url('/herobg.png')" }}>
                 <div className="absolute inset-0 bg-white bg-opacity-80"></div>
                 <div className={`${styles.gappens} px-15 container mx-auto flex flex-col md:flex-row items-center justify-between md:justify-start gap-0 h-full relative`}>
-                    <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 bg-amber-400 top-0 left-10 z-10 `}>
+                    <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-10 z-10 `}>
                     </div>
                     <div className={`${styles.flexonee}md:w-1/2 flex justify-center items-center z-10 relative`}>
                         <ImageCarousel />

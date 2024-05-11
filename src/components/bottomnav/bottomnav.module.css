@@ -1,0 +1,10 @@
+@media (max-width:800px) {
+    .btmnav {
+        position: fixed;
+        bottom: 55px;
+        left: 0;
+        right: 0;
+
+    }
+
+}
