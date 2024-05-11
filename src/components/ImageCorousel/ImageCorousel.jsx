@@ -22,9 +22,9 @@ const ImageCarousel = () => {
                 src={images[currentIndex]}
                 alt="Food"
                 className="w-full h-full"
-                initial={{ x: '100%' }}
+                initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
-                exit={{ x: '-100%' }}
+                exit={{ x: '100%' }}
                 transition={{ duration: 1, ease: 'easeInOut' }}
             />
         </div>

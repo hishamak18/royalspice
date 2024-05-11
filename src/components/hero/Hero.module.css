@@ -17,3 +17,14 @@
         order: 1;
     }
 }
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 500px solid transparent;
+    /* Set the height of the triangle */
+    border-bottom: 500px solid transparent;
+    /* Set the height of the triangle */
+    border-right: 250px solid red;
+    /* Set the width of the triangle and its color */
+}
