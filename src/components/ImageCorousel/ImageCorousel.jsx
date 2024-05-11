@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const images = ['/foodone.png', '/foodthree.png', '/foodfour.png', '/foodfive.png', '/foodseven.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
+const images = ['/foodone.png', '/foodthree.png', '/foodfour.png', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
 
 const ImageCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,7 +16,7 @@ const ImageCarousel = () => {
     }, []);
 
     return (
-        <div className="relative overflow-hidden">
+        <div className=" overflow-hidden">
             <motion.img
                 key={currentIndex}
                 src={images[currentIndex]}
@@ -24,7 +24,7 @@ const ImageCarousel = () => {
                 // className="w-full h-full"
                 initial={{ x: '-100%' }}
                 animate={{ x: 0 }}
-                exit={{ x: '100%' }}
+                exit={{ x: '150%' }}
                 transition={{ duration: 1, ease: 'easeInOut' }}
                 width={500}
                 height={500}

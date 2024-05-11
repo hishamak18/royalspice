@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ImageCarousel from "../ImageCorousel/ImageCorousel";
 import styles from './Hero.module.css'
 const HeroSection = () => {
@@ -11,6 +12,7 @@ const HeroSection = () => {
                     <div className={`${styles.flexonee}md:w-1/2 flex justify-center items-center z-10 relative`}>
                         <ImageCarousel />
                     </div>
+
                     {/* Right side */}
                     <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 px-20`}>
                         <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
@@ -19,6 +21,9 @@ const HeroSection = () => {
                         <button className="flex justify-start items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg">
                             Call to Action
                         </button>
+                    </div>
+                    <div>
+                        <Image src={'/heronew.png'} width={500} height={500} />
                     </div>
                 </div>
             </div>
