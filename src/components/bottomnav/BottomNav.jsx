@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './bottomnav.module.css'
 const BottomNav = () => {
     return (
-        <nav className={` ${styles.btmnav} lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50  backdrop-filter backdrop-blur-lg bg-opacity-30 border-t border-gray-200`}>
+        <nav className={` ${styles.btmnav} lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 `}>
 
             <ul className="flex justify-around items-center py-3">
                 <li>
