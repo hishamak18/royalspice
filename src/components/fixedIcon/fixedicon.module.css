@@ -2,3 +2,13 @@
     bottom: 8.8rem;
     right: 10px;
 }
+
+.icon {
+    width: 50px;
+}
+
+@media (max-width:800px) {
+    .icon {
+        width: 25px !important;
+    }
+}
