@@ -4,7 +4,7 @@ import styles from './Hero.module.css'
 const HeroSection = () => {
     return (
         <div className="relative">
-            <div className="bg-cover bg-center h-screen relative" style={{ backgroundImage: "url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" }}>
+            <div className="bg-cover bg-center h-screen relative" style={{ backgroundImage: "url('/herobg.png')" }}>
                 <div className="absolute inset-0 bg-white bg-opacity-80"></div>
                 <div className={`${styles.gappens} px-15 container mx-auto flex flex-col md:flex-row items-center justify-between md:justify-start gap-0 h-full relative`}>
                     <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-10 z-10 `}>
