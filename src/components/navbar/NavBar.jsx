@@ -10,7 +10,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="bg-white p-4 flex justify-between items-center sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
+        <nav className="bg-white p-4 flex justify-between items-center sticky top-0 z-50  border-b border-gray-200">
             {/* Left side logo */}
             <div className="flex items-center">
                 <img src="/logo.png" alt="Logo" className="h-8 mr-2" />
