@@ -5,6 +5,7 @@ import Menu from "@/components/menu/Menu";
 import Blog from "@/components/blog/Blog";
 import Contact from "@/components/contact/Contact";
 import Map from "@/components/Map/Map";
+import Features from "@/components/features/Features";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <div className="px-10">
         <About />
+        <Features />
         <Banner />
         <Menu />
         <Blog />
