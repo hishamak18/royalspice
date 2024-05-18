@@ -8,24 +8,31 @@ const BottomNav = () => {
 
             <ul className="flex justify-around items-center py-3">
                 <li>
-                    <Link href="/" className="  bg-amber-400 text-white rounded-full p-4 shadow-lg z-50 flex items-center">
+                    <Link href="#" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faHome} width={20} />
                     </Link>
+                    <label htmlFor="" className='ml-2 text-sm'>Home</label>
                 </li>
                 <li>
-                    <Link href="/contact" className="  bg-amber-400 text-white rounded-full p-4 shadow-lg z-50 flex items-center">
+                    <Link href="#" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faEnvelope} width={20} />
                     </Link>
+                    <label htmlFor="" className='ml-2 text-sm'>Menu</label>
+
                 </li>
                 <li>
-                    <Link href="/blog" className="  bg-amber-400 text-white rounded-full p-4 shadow-lg z-50 flex items-center">
+                    <Link href="#" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faBlog} width={20} />
                     </Link>
+                    <label htmlFor="" className='ml-2 text-sm'>Blog</label>
+
                 </li>
                 <li>
-                    <Link href="#" className="  bg-amber-400 text-white rounded-full p-4 shadow-lg z-50 flex items-center">
-                        <FontAwesomeIcon icon={faBars} width={20} />
+                    <Link href="#" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
+                        <FontAwesomeIcon icon={faBars} width={30} />
                     </Link>
+                    <label htmlFor="" className='ml-2 text-sm'>Contact</label>
+
                 </li>
             </ul>
             <div className={` bg-gray-800 text-white py-4`}>
