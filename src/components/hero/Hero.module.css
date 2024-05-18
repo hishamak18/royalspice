@@ -31,6 +31,10 @@
         border-radius: 0% 0% 50% 20% !important;
     }
 
+    .lstImg {
+        display: none;
+    }
+
     .gappens {
         gap: 0;
         justify-content: center;

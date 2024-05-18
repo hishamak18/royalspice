@@ -22,7 +22,7 @@ const HeroSection = () => {
                             Call to Action
                         </button>
                     </div>
-                    <div>
+                    <div className={styles.lstImg}>
                         <Image src={'/heronew.png'} width={500} height={500} />
                     </div>
                 </div>
