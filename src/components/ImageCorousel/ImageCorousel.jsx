@@ -22,7 +22,7 @@ const ImageCarousel = () => {
     }, []);
 
     return (
-        <div className="overflow-hidden" style={{ width: '500px', height: '500px' }}>
+        <div className="overflow-hidden" style={{ height: '500px' }}>
             <AnimatePresence>
                 <motion.img
                     key={currentIndex}
