@@ -15,8 +15,8 @@ const About = () => {
                     <p>  Nestled in the heart of Wayanad, our restaurant offers a luxurious ambiance and impeccable service, making every visit a memorable one.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8">
-                    <img class="w-full rounded-lg" src="/heronew.png" alt="office content 1" />
-                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/heronew.png" alt="office content 2" />
+                    <img class="w-full rounded-lg" src="https://images.pexels.com/photos/15638789/pexels-photo-15638789/free-photo-of-restaurant-sidewalk-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="office content 1" />
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://images.pexels.com/photos/3556225/pexels-photo-3556225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="office content 2" />
                 </div>
             </div>
         </section>
