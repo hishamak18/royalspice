@@ -71,10 +71,10 @@ const ContactSection = () => {
                     >
                         <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
                         <p className="text-gray-700 mb-4">
-                            <strong>Address:</strong> 123 Main Street, Anytown, USA
+                            <strong>Address:</strong> Calicut Rd, Thonichal, Mananthavady, Kerala 670645
                         </p>
                         <p className="text-gray-700 mb-4">
-                            <strong>Phone:</strong> (123) 456-7890
+                            <strong>Phone:</strong> 04935 208 365
                         </p>
                         <p className="text-gray-700 mb-4">
                             <strong>Email:</strong> contact@restaurant.com
