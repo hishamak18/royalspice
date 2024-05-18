@@ -11,4 +11,9 @@
     .icon {
         width: 25px !important;
     }
+
+    .fxbtn {
+        bottom: 11.8rem;
+        right: 10px;
+    }
 }
