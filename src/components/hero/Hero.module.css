@@ -44,3 +44,9 @@
         /* flex: 1; */
     }
 }
+
+.lstImg {
+    position: absolute;
+    right: 0;
+
+}

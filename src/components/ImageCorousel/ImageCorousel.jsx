@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const images = ['/foodone.png', '/foodthree.png', '/foodfour.png', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
+const images = ['/foodone.png', '/foodthree.png', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
 
 const ImageCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +32,8 @@ const ImageCarousel = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    style={{ width: '100%', height: '100%' }}
+                    width={500}
+                    height={500}
                 />
             </AnimatePresence>
         </div>
