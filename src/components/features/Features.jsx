@@ -4,7 +4,7 @@ import { faTruck, faUsers, faUtensils } from '@fortawesome/free-solid-svg-icons'
 
 const Features = () => {
     return (
-        <section className="relative">
+        <section className="relative  px-10" >
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/herobg.png')", opacity: 0.10 }}></div>
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 relative z-10 ">
                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
@@ -31,7 +31,7 @@ const Features = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

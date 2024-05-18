@@ -11,15 +11,13 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="px-10">
-        <About />
-        <Features />
-        <Banner />
-        <Menu />
-        <Blog />
-        <Contact />
-        <Map />
-      </div>
+      <About />
+      <Features />
+      <Banner />
+      <Menu />
+      <Blog />
+      <Contact />
+      <Map />
     </div>
   );
 }
