@@ -14,17 +14,17 @@ const HeroSection = () => {
                     </div>
 
                     {/* Right side */}
-                    <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 md:px-15`}>
+                    <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 `} >
                         <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
-                        <h2 className="text-3xl text-left md:text-4xl font-bold mb-2">Where Culinary Wonders <br /> Await</h2>
-                        <p className="text-left mb-6">Savor exquisite flavors in an elegant setting.</p>
-                        <button className="flex justify-start items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded shadow-lg">
+                        <h2 className="text-3xl text-amber-500 text-left md:text-4xl font-bold mb-2 pr-2">Where Culinary Wonders <br /> Await</h2>
+                        <p className="text-left mb-6  text-amber-800 ">Savor exquisite flavors in an <br /> elegant setting.</p>
+                        <button className="flex justify-start items-center bg-amber-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg">
                             Call to Action
                         </button>
                     </div>
-                    <div className={`${styles.lstImg} `}>
+                    {/* <div className={`${styles.lstImg} `}>
                         <Image src={'https://images.pexels.com/photos/3556225/pexels-photo-3556225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} width={500} height={500} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

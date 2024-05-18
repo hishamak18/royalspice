@@ -38,6 +38,7 @@
     .gappens {
         gap: 0;
         justify-content: center;
+        overflow: hidden;
     }
 
     .flexonee {
@@ -47,6 +48,6 @@
 
 .lstImg {
     position: absolute;
-    right: 0;
-
+    right: -20px;
+    overflow: hidden;
 }
