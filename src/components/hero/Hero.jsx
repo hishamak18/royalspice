@@ -9,12 +9,12 @@ const HeroSection = () => {
                 <div className={`${styles.gappens} px-15 container mx-auto flex flex-col md:flex-row items-center justify-between md:justify-start gap-0 h-full relative`}>
                     <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-10 z-10 `}>
                     </div>
-                    <div className={`${styles.flexonee}md:w-1/2 flex justify-center items-center z-10 relative`}>
+                    <div className={`md:w-1/2 flex justify-center items-center z-10 relative`}>
                         <ImageCarousel />
                     </div>
 
                     {/* Right side */}
-                    <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 `}>
+                    <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 md:px-15`}>
                         <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
                         <h2 className="text-3xl text-left md:text-4xl font-bold mb-2">Where Culinary Wonders <br /> Await</h2>
                         <p className="text-left mb-6">Savor exquisite flavors in an elegant setting.</p>
