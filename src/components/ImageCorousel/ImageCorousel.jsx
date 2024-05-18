@@ -8,9 +8,15 @@ const ImageCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
+        // Preload images to prevent lag
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 1000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
@@ -22,10 +28,10 @@ const ImageCarousel = () => {
                     key={currentIndex}
                     src={images[currentIndex]}
                     alt="Food"
-                    initial={{ x: '-100%' }}
-                    animate={{ x: 0 }}
-                    exit={{ x: '150%' }}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
                     style={{ width: '100%', height: '100%' }}
                 />
             </AnimatePresence>
