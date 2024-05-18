@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const menuItems = [
-    { id: 1, imageSrc: 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', alt: 'Dish 1' },
+    { id: 1, imageSrc: 'https://images.pexels.com/photos/18698240/pexels-photo-18698240/free-photo-of-food-photography.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', alt: 'Dish 1' },
     { id: 2, imageSrc: 'https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', alt: 'Dish 2' },
     { id: 3, imageSrc: 'https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', alt: 'Dish 3' },
 ];
