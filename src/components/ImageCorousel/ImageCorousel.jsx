@@ -1,11 +1,13 @@
 "use client";
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
 const images = ['/foodone.png', '/foodthree.png', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
 
 const ImageCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll();
 
     useEffect(() => {
         // Preload images to prevent lag
@@ -21,8 +23,12 @@ const ImageCarousel = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const translateX = useTransform(scrollYProgress, [0, 1], [0, 850]);
+
     return (
         <div className="overflow-hidden" style={{ height: '500px' }}>
+
+
             <AnimatePresence>
                 <motion.img
                     key={currentIndex}

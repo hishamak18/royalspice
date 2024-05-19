@@ -12,12 +12,17 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.42.1",
     "cookie": "^0.6.0",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.1.9",
     "next": "14.2.3",
+    "next-sanity": "^7.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "sanity": "^3.42.1",
+    "styled-components": "^6.1.11",
     "zod": "^3.23.8"
   },
   "devDependencies": {

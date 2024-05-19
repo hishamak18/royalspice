@@ -96,12 +96,8 @@ const ContactSection = () => {
                                 </svg>
                             </a>
                         </div>
-                        <iframe
-                            className="w-full h-64 rounded-lg shadow-lg"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095774!2d144.9537363153167!3d-37.81627974203106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727ed9bcd92b1a!2s123%20Main%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1629131030179!5m2!1sen!2sus"
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
+                        <iframe className="w-full h-64 rounded-lg shadow-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124989.66357934265!2d75.9196786226428!3d11.770191766998085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba5df4cb9700545%3A0xfc93e781c2531b9c!2sroyal%20spice%20restaurant%20the%20spice%20of%20life!3m2!1d11.7702036!2d76.00208049999999!5e0!3m2!1sen!2sin!4v1716121463920!5m2!1sen!2sin" width="600" height="450" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </motion.div>
                 </div>
             </div>

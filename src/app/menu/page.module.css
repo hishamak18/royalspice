@@ -1,0 +1,13 @@
+.imgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
+}
+
+.imgcontainer img {
+    width: 100%;
+}
