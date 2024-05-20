@@ -1,8 +1,8 @@
 "use client"
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'
-import MenuImageUpdate from '../components/menuup/menu';
-import BlogUpdate from '../components/blogup/blog';
+import MenuImageUpdate from '../../components/menuup/menu';
+import BlogUpdate from '../../components/blogup/blog';
 
 
 export default function AdminPage() {
