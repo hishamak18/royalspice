@@ -1,4 +1,3 @@
-
 export const post = {
   name: 'post',
   title: 'Post',
@@ -19,12 +18,6 @@ export const post = {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: { type: 'author' },
-    },
-    {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -38,17 +31,6 @@ export const post = {
           title: 'Alternative Text',
         }
       ]
-    },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
     },
     {
       name: 'body',

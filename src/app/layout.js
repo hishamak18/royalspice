@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
         <TransitionProvider>{children}
           <Footer />
         </TransitionProvider>
-
       </body>
     </html>
   );
