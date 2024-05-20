@@ -1,3 +1,4 @@
+
 export const post = {
   name: 'post',
   title: 'Post',
@@ -21,7 +22,7 @@ export const post = {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'},
+      to: { type: 'author' },
     },
     {
       name: 'mainImage',
@@ -42,7 +43,7 @@ export const post = {
       name: 'categories',
       title: 'Categories',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      of: [{ type: 'reference', to: { type: 'category' } }],
     },
     {
       name: 'publishedAt',
@@ -59,12 +60,18 @@ export const post = {
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      subtitle: 'slug.current',
+      description: 'body[0].children[0].text',
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
+      const { title, subtitle, description, media } = selection;
+      return {
+        title,
+        subtitle,
+        description: description ? `${description.substring(0, 50)}...` : 'No description',
+        media,
+      };
     },
   },
-}
+};
