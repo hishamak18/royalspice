@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faEnvelope, faBlog, faBars, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faEnvelope, faBlog, faBars, faPhone, faBowlFood } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import styles from './bottomnav.module.css'
 const BottomNav = () => {
@@ -15,7 +15,7 @@ const BottomNav = () => {
                 </li>
                 <li>
                     <Link href="/" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
-                        <FontAwesomeIcon icon={faEnvelope} width={20} />
+                        <FontAwesomeIcon icon={faBowlFood} width={20} />
                     </Link>
                     <label htmlFor="" className='ml-2 text-sm'>Menu</label>
 
