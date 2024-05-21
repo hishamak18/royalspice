@@ -11,10 +11,10 @@ const FixedIcon = () => {
             <Link href="tel:+918086624365" className={`${styles.fxbtn} bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
                 <FontAwesomeIcon icon={faPhone} className={`${styles.icon} mr-2`} fill={true} />
             </Link >
-            <Link href="https://www.instagram.com/royalspiceresturant?igsh=dnBtd2gwajhzcmgx" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
+            <Link href="https://www.instagram.com/royalspicerestaurant_?igsh=eGdzcWtlb3pmNTEx&utm_source=qr" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
                 <FontAwesomeIcon icon={faInstagram} className={`${styles.icon} mr-2`} fill={true} />
             </Link >
-            <Link href="https://www.facebook.com/" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
+            <Link href="https://www.facebook.com/profile.php?id=61556708704666&mibextid=LQQJ4d" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
                 <FontAwesomeIcon icon={faFacebook} className={`${styles.icon} mr-2`} fill={true} />
             </Link >
             <Link href="https://wa.me/+918086624365" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
