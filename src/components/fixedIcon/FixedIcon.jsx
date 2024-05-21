@@ -17,7 +17,7 @@ const FixedIcon = () => {
             <Link href="https://www.facebook.com/" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
                 <FontAwesomeIcon icon={faFacebook} className={`${styles.icon} mr-2`} fill={true} />
             </Link >
-            <Link href="https://wa.me/8086624365" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
+            <Link href="https://wa.me/+918086624365" className={`${styles.fxbtn}  bg-green-500 text-white rounded-full p-4 shadow-lg z-50 flex items-center`}>
                 <FontAwesomeIcon icon={faWhatsapp} className={`${styles.icon} mr-2`} width={50} fill={true} />
             </Link >
         </div >
