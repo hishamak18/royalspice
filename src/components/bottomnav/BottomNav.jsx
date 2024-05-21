@@ -14,7 +14,7 @@ const BottomNav = () => {
                     <label htmlFor="" className='ml-2 text-sm'>Home</label>
                 </li>
                 <li>
-                    <Link href="/" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
+                    <Link href="/menu" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faBowlFood} width={20} />
                     </Link>
                     <label htmlFor="" className='ml-2 text-sm'>Menu</label>
