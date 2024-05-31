@@ -1,12 +1,13 @@
-export const metadata = {
-    title: 'Royal Spice',
-    description: 'Royal admin page',
-};
+import React from 'react';
 
-export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
-    );
+export const metadata = {
+  title: 'Passion Palace',
+  description: 'Passion palace admin page',
+}
+
+export default function Layout({ children }) {
+  return (
+    <body>{children}</body>
+
+  )
 }

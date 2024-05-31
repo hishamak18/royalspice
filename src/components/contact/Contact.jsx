@@ -74,10 +74,10 @@ const ContactSection = () => {
                             <strong>Address:</strong> Calicut Rd, Thonichal, Mananthavady, Kerala 670645
                         </p>
                         <p className="text-gray-700 mb-4">
-                            <strong>Phone:</strong> 04935 208 365
+                            <strong>Phone:</strong> 8086624365
                         </p>
                         <p className="text-gray-700 mb-4">
-                            <strong>Email:</strong> contact@restaurant.com
+                            <strong>Email:</strong> rsrwyd@gmail.com
                         </p>
                         <div className="flex space-x-4 mb-4">
                             <a href="#" className="text-primary hover:text-primary-dark">
