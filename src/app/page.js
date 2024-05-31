@@ -5,6 +5,7 @@ import Menu from "../components/menu/Menu";
 import Blog from "../components/blog/Blog";
 import Contact from "../components/contact/Contact";
 import Features from "../components/features/Features";
+import Gallery from "../components/Gallery/Gallery"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <Menu />
       <Banner />
+      <Gallery />
       <Blog />
       <Contact />
     </div>
