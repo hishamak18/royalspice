@@ -1,17 +1,21 @@
-// fetchData.js
 import client from './client'
 
 export const fetchBlogPosts = async () => {
-    const query = `*[_type == "post"]{
+  const query = `*[_type == "post"]{
     title,
-    slug,
+    description,
+    "slug": slug.current,
     mainImage {
       asset->{
         url
       },
       alt
     },
-    body[0].children[0].text
+    body
   }`
+  try {
     return await client.fetch(query)
+  } catch (error) {
+    console.error('Error fetching posts:', error)
+  }
 }

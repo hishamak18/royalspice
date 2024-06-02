@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
+import { fetchMenuImages } from '../../../../sanity/lib/menu'
 // import { fetchMenuImages } from '../../../sanity/schemaTypes/menu'
-import { fetchMenuImages } from '../../../sanity/lib/menu'
 
 const Page = () => {
     const [menuImages, setMenuImages] = useState([])
