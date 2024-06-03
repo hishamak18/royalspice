@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Passion Palace',
-  description: 'Passion palace admin page',
+  title: 'Royal Spice Restaurant',
+  description: 'Royal Spice Restaurant Admin Pannel',
 }
 
 export default function RootLayout({ children }) {

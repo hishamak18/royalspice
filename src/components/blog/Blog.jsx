@@ -17,6 +17,8 @@ const Blog = () => {
         };
         getBlogs();
     }, []);
+    const initialBlog = blogs.slice(0, 2);
+    console.log(initialBlog)
 
     return (
         <div className="py-12 bg-gray-100">

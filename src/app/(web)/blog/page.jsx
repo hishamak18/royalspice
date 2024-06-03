@@ -47,7 +47,7 @@ const Blog = ({ params }) => {
                     ))}
                 </div>
                 {visibleBlogs < blogs.length && (
-                    <div className="text-center mt-8">
+                    <div className="text-center mt-8" style={{ marginBottom: '100px' }}>
                         <button onClick={loadMore} type="button" className="text-white bg-amber-300 hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Load More
                         </button>
