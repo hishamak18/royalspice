@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-
+import styles from './about.module.css'
 
 const About = () => {
     return (
@@ -13,8 +13,8 @@ const About = () => {
                     <p>  Nestled in the heart of Wayanad, our restaurant offers a luxurious ambiance and impeccable service, making every visit a memorable one.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8" >
-                    <img style={{ height: '400px ' }} class="w-full rounded-lg" src="https://live.staticflickr.com/65535/53762831046_c04ef22294_m.jpg" alt="office content 1" />
-                    <img style={{ height: '400px ' }} class="mt-4 w-full lg:mt-10 rounded-lg" src="https://live.staticflickr.com/65535/53763146129_de593ba9ab_m.jpg" alt="office content 2" />
+                    <img style={{ height: '400px ' }} class={`w-full rounded-lg ${styles.image}`} src="https://live.staticflickr.com/65535/53762831046_c04ef22294_m.jpg" alt="office content 1" />
+                    <img style={{ height: '400px ' }} class={`w-full rounded-lg ${styles.image}`} src="https://live.staticflickr.com/65535/53763146129_de593ba9ab_m.jpg" alt="office content 2" />
                 </div>
             </div>
         </section>

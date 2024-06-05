@@ -45,4 +45,10 @@
 
 .imageContainer {}
 
-.image {}
+@media (max-width:800px) {
+
+    .image {
+        height: 250px !important;
+
+    }
+}

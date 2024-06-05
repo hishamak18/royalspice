@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { useState } from 'react';
-
+import styles from './NavBar.module.css'
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,11 +10,11 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="bg-white p-4 flex justify-between items-center sticky top-0 z-50  border-b border-gray-200">
+        <nav className="bg-amber-400 p-4 flex justify-between items-center sticky top-0 z-50  border-b border-gray-200">
             {/* Left side logo */}
             <div className="flex items-center">
-                <img src="/logo.png" alt="Logo" className="h-8 mr-2" />
-                <span className="text-gray-900 text-lg font-semibold">Royal Spice</span>
+                <img src="/logo.png" alt="Logo" className={`h-8 mr-2 ${styles.imglogo}`} />
+                <span className="text-2xl  text-left md:text-1xl  font-bold mt-2 pr-2" style={{ color: 'black' }}>Royal Spice Restaurant</span>
             </div>
 
             {/* Hamburger menu icon for mobile */}
