@@ -25,6 +25,12 @@
 }
 
 @media (max-width:800px) {
+    .linkbokk {
+        margin-bottom: 20px;
+        font-size: 14px;
+
+    }
+
     .recta {
         width: 310px;
         height: 350px;
