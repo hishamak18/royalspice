@@ -1,5 +1,9 @@
 @media (max-width:800px) {
     .cntctContainer {
-        margin-bottom: 115px;
+        margin-bottom: 125px;
+    }
+
+    .contactone {
+        display: none;
     }
 }

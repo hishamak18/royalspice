@@ -11,7 +11,7 @@ const ContactSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <motion.div
-                        className="bg-white rounded-lg shadow-lg p-8"
+                        className={`bg-white rounded-lg shadow-lg p-8  ${styles.contactone}`}
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
@@ -79,23 +79,7 @@ const ContactSection = () => {
                         <p className="text-gray-700 mb-4">
                             <strong>Email:</strong> rsrwyd@gmail.com
                         </p>
-                        <div className="flex space-x-4 mb-4">
-                            <a href="#" className="text-primary hover:text-primary-dark">
-                                <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.9 3.6 9 8.3 9.7.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.4-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.6 1.2 1.6 1.2 1 .1 2.2-.6 2.7-.9.1-.7.4-1.3.8-1.5-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.7.1-3.5 0 0 1-.3 3.4 1.3 1-.3 2-.4 3-.4 1 0 2 .1 3 .4 2.3-1.5 3.4-1.3 3.4-1.3.6 1.8.2 3.2.1 3.5.7.8 1.2 2 1.2 3.3 0 4.7-2.9 5.6-5.4 5.9.4.4.8 1.1.8 2.3v3.4c0 .4.2.8.8.6 4.7-.7 8.3-4.8 8.3-9.7 0-5.4-4.4-9.8-9.8-9.8z" />
-                                </svg>
-                            </a>
-                            <a href="#" className="text-primary hover:text-primary-dark">
-                                <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.9 3.6 9 8.3 9.7.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.4-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.6 1.2 1.6 1.2 1 .1 2.2-.6 2.7-.9.1-.7.4-1.3.8-1.5-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.7.1-3.5 0 0 1-.3 3.4 1.3 1-.3 2-.4 3-.4 1 0 2 .1 3 .4 2.3-1.5 3.4-1.3 3.4-1.3.6 1.8.2 3.2.1 3.5.7.8 1.2 2 1.2 3.3 0 4.7-2.9 5.6-5.4 5.9.4.4.8 1.1.8 2.3v3.4c0 .4.2.8.8.6 4.7-.7 8.3-4.8 8.3-9.7 0-5.4-4.4-9.8-9.8-9.8z" />
-                                </svg>
-                            </a>
-                            <a href="#" className="text-primary hover:text-primary-dark">
-                                <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 4.9 3.6 9 8.3 9.7.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.4-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.6 1.2 1.6 1.2 1 .1 2.2-.6 2.7-.9.1-.7.4-1.3.8-1.5-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.7.1-3.5 0 0 1-.3 3.4 1.3 1-.3 2-.4 3-.4 1 0 2 .1 3 .4 2.3-1.5 3.4-1.3 3.4-1.3.6 1.8.2 3.2.1 3.5.7.8 1.2 2 1.2 3.3 0 4.7-2.9 5.6-5.4 5.9.4.4.8 1.1.8 2.3v3.4c0 .4.2.8.8.6 4.7-.7 8.3-4.8 8.3-9.7 0-5.4-4.4-9.8-9.8-9.8z" />
-                                </svg>
-                            </a>
-                        </div>
+
                         <iframe className="w-full h-64 rounded-lg shadow-lg"
                             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124989.66357934265!2d75.9196786226428!3d11.770191766998085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba5df4cb9700545%3A0xfc93e781c2531b9c!2sroyal%20spice%20restaurant%20the%20spice%20of%20life!3m2!1d11.7702036!2d76.00208049999999!5e0!3m2!1sen!2sin!4v1716121463920!5m2!1sen!2sin" width="600" height="450" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </motion.div>

@@ -14,7 +14,7 @@ const NavBar = () => {
             {/* Left side logo */}
             <div className="flex items-center">
                 <img src="/logo.png" alt="Logo" className={`h-8 mr-2 ${styles.imglogo}`} />
-                <span className="text-2xl  text-left md:text-1xl  font-bold mt-2 pr-2" style={{ color: 'black' }}>Royal Spice Restaurant</span>
+                <span className="text-1xl  text-left md:text-1xl  font-bold mt-2 pr-2" style={{ color: 'black' }}>Royal Spice Restaurant</span>
             </div>
 
             {/* Hamburger menu icon for mobile */}
