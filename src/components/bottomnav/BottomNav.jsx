@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faEnvelope, faBlog, faBars, faPhone, faBowlFood } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faEnvelope, faBlog, faBars, faPhone, faBowlFood, faPen } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import styles from './bottomnav.module.css'
 const BottomNav = () => {
@@ -32,6 +32,12 @@ const BottomNav = () => {
                         <FontAwesomeIcon icon={faBars} width={30} />
                     </Link>
                     <label htmlFor="" className='ml-2 text-sm'>Contact</label>
+
+                </li><li>
+                    <Link href="https://g.page/r/CZwbU8KB55P8EB0/review" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
+                        <FontAwesomeIcon icon={faPen} width={30} />
+                    </Link>
+                    <label htmlFor="" className='ml-2 text-sm'>Review Us</label>
 
                 </li>
             </ul>
