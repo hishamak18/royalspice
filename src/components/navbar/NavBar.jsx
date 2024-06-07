@@ -61,8 +61,8 @@ const NavBar = () => {
 
 
             </nav>
-            <Link href="tel:+918086624365">
-                <span className='bg-red-400 w-full absolute z-50 text-center text-white p-3'>For Booking  Your Table, Home delivery click here to contact - +918086624365</span>
+            <Link href="tel:+918086624365,04935208365">
+                <span className='bg-red-400 w-full absolute z-50 text-center text-white p-3'>For Booking  Your Table, Home delivery  contact - +918086624365 ,04935 208 365 </span>
             </Link>
         </div>
     );
