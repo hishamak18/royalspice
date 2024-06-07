@@ -74,7 +74,7 @@ const ContactSection = () => {
                             <strong>Address:</strong> Calicut Rd, Thonichal, Mananthavady, Kerala 670645
                         </p>
                         <p className="text-gray-700 mb-4">
-                            <strong>Phone:</strong> 8086624365
+                            <strong>Phone:</strong> 8086624365 , 04935208365
                         </p>
                         <p className="text-gray-700 mb-4">
                             <strong>Email:</strong> rsrwyd@gmail.com

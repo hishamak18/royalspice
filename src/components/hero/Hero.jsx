@@ -22,7 +22,7 @@ const HeroSection = () => {
                         <Link href="tel:+918086624365" >
                             <button className="flex justify-start items-center bg-amber-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg linkbokk" >
 
-                                Book Your Table :+91 8086 624 365
+                                Book Your Table :+91 8086 624 365 ,0493 520 8365
                             </button>
                         </Link>
                     </div>
