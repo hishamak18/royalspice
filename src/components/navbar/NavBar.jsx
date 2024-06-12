@@ -23,7 +23,7 @@ const NavBar = () => {
 
 
                 {/* Right side nav links */}
-                <ul className={`flex items-center hidden sm:inline-block z-50 lg:flex ${isMenuOpen ? 'hidden' : 'lg:block'}`}>
+                <ul style={{ marginRight: "50px" }} className={`flex items-center hidden sm:inline-block z-50 lg:flex ${isMenuOpen ? 'hidden' : 'lg:block'}`}>
                     <li className="mx-2">
                         <Link className=" hover:text-gray-300" href="/">
                             Home
