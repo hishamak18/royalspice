@@ -49,7 +49,7 @@ const Testimonials = () => {
             >
                 <h2 className="text-4xl font-bold mb-4">
                     People say <span className="text-green-600">sweetest</span> thing!
-                    Don't they?
+                    Don&apos;t they?
                 </h2>
                 <p className="text-gray-700">
                     One of our hidden secrets to finding such good taste is our customers.
