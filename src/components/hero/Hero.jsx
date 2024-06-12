@@ -19,12 +19,15 @@ const HeroSection = () => {
                         <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
                         <h2 className="text-3xl text-amber-500 text-left md:text-4xl font-bold mb-2 pr-2">Where Culinary Wonders <br /> Await</h2>
                         <p className="text-left mb-6  text-amber-800 ">Savor exquisite flavors in an <br /> elegant setting.</p>
-                        <Link href="tel:+918086624365" >
-                            <button className="flex justify-start items-center bg-amber-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg linkbokk" >
+                        <div style={{ marginBottom: "50px" }}>
 
-                                Book Your Table :+91 8086 624 365 ,0493 520 8365
-                            </button>
-                        </Link>
+                            <Link href="tel:+918086624365" >
+                                <button className="flex justify-start items-center bg-amber-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg linkbokk" >
+
+                                    Book Your Table :+91 8086 624 365 ,0493 520 8365
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                     {/* <div className={`${styles.lstImg} `}>
                         <Image src={'https://images.pexels.com/photos/3556225/pexels-photo-3556225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} width={500} height={500} />
