@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import styles from './contact.module.css'
 const ContactSection = () => {
     return (
-        <div className={`${styles.cntctContainer} py-12 bg-white`}>
+        <div style={{ paddingBottom: "150px", paddingTop: "150px" }} className={`${styles.cntctContainer} py-12 bg-white`}>
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner"
 import Gallery from "../../components/Gallery/Gallery"
 import Blog from "../../components/blog/Blog"
 import Contact from "../../components/contact/Contact"
-
+import Testimonial from "../../components/review/Review"
 export default function Home() {
   return (
     <div className="">
@@ -17,6 +17,7 @@ export default function Home() {
       <Banner />
       <Gallery />
       <Blog />
+      <Testimonial />
       <Contact />
     </div>
   );
