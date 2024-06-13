@@ -49,6 +49,11 @@ const NavBar = () => {
                             Contact
                         </Link>
                     </li>
+                    <li className="mx-2">
+                        <Link className=" hover:text-gray-300" href="https://g.page/r/CZwbU8KB55P8EB0/review">
+                            Review Us
+                        </Link>
+                    </li>
                 </ul>
 
                 {/* Overlay for small screens */}
