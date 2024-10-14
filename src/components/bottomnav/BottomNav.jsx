@@ -13,13 +13,13 @@ const BottomNav = () => {
                     </Link>
                     <label htmlFor="" className='ml-2 text-sm'>Home</label>
                 </li>
-                <li>
+                {/* <li>
                     <Link href="/menu" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faBowlFood} width={20} />
                     </Link>
                     <label htmlFor="" className='ml-2 text-sm'>Menu</label>
 
-                </li>
+                </li> */}
                 <li>
                     <Link href="/blog" className="  bg-white text-amber-500 rounded-full p-4 z-50 flex items-center">
                         <FontAwesomeIcon icon={faBlog} width={20} />

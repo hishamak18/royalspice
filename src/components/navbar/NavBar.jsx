@@ -34,11 +34,11 @@ const NavBar = () => {
                             About
                         </Link>
                     </li>
-                    <li className="mx-2">
+                    {/* <li className="mx-2">
                         <Link className=" hover:text-gray-300" href="/menu">
                             Menu
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="mx-2">
                         <Link className=" hover:text-gray-300" href="/blog">
                             Blogs
