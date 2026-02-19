@@ -64,37 +64,45 @@ const ContactSection = () => {
                         </form>
                     </motion.div>
                     <motion.div
-                        className="bg-white rounded-lg shadow-lg p-8"
+                        className="bg-white rounded-lg shadow-lg p-8 flex flex-col justify-center"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-semibold mb-6 border-b pb-2">Our Locations</h3>
+                        <h3 className="text-3xl font-playfair font-bold mb-8 text-gray-900 border-b pb-4">Our Locations</h3>
 
-                        <div className="mb-10">
-                            <h4 className="text-xl font-bold text-amber-600 mb-2">Thonichal Branch (Main)</h4>
-                            <p className="text-gray-700 mb-2">
-                                <strong>Address:</strong> Calicut Rd, Thonichal, Mananthavady, Kerala 670645
-                            </p>
-                            <p className="text-gray-700 mb-3">
-                                <strong>Phone:</strong> 8086624365, 04935 208 365
-                            </p>
-                            <iframe className="w-full h-48 rounded-lg shadow-sm border"
-                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124989.66357934265!2d75.9196786226428!3d11.770191766998085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba5df4cb9700545%3A0xfc93e781c2531b9c!2sroyal%20spice%20restaurant%20the%20spice%20of%20life!3m2!1d11.7702036!2d76.00208049999999!5e0!3m2!1sen!2sin!4v1716121463920!5m2!1sen!2sin"
-                                width="100%" height="200" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="mb-10 group hover:bg-amber-50 p-4 rounded-xl transition-all duration-300">
+                            <h4 className="text-xl font-outfit font-bold text-amber-600 mb-3 flex items-center gap-2">
+                                <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                Thonichal Branch (Main)
+                            </h4>
+                            <div className="space-y-2 font-outfit text-gray-600">
+                                <p className="flex items-start gap-2">
+                                    <strong className="text-gray-900 min-w-[80px]">Address:</strong>
+                                    <span>Calicut Rd, Thonichal, Mananthavady, Kerala 670645</span>
+                                </p>
+                                <p className="flex items-start gap-2">
+                                    <strong className="text-gray-900 min-w-[80px]">Phone:</strong>
+                                    <span className="text-amber-700 font-semibold italic">8086624365, 04935 208 365</span>
+                                </p>
+                            </div>
                         </div>
 
-                        <div>
-                            <h4 className="text-xl font-bold text-amber-600 mb-2">Payyampally Branch (New)</h4>
-                            <p className="text-gray-700 mb-2">
-                                <strong>Address:</strong> Post, Thannikkal, Payyampally, Mananthavady, Kerala 670646
-                            </p>
-                            <p className="text-gray-700 mb-3">
-                                <strong>Phone:</strong> 9656227262
-                            </p>
-                            <iframe className="w-full h-48 rounded-lg shadow-sm border"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.6308028180447!2d76.04287680000002!3d11.791024700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5dfb1ebd2dcb3%3A0x7a8b247524f1f0a5!2sRoyal%20Spice%20Restaurant!5e0!3m2!1sen!2sin!4v1771501309648!5m2!1sen!2sin"
-                                width="100%" height="200" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="group hover:bg-amber-50 p-4 rounded-xl transition-all duration-300">
+                            <h4 className="text-xl font-outfit font-bold text-amber-600 mb-3 flex items-center gap-2">
+                                <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                Payyampally Branch (New)
+                            </h4>
+                            <div className="space-y-2 font-outfit text-gray-600">
+                                <p className="flex items-start gap-2">
+                                    <strong className="text-gray-900 min-w-[80px]">Address:</strong>
+                                    <span>Post, Thannikkal, Payyampally, Mananthavady, Kerala 670646</span>
+                                </p>
+                                <p className="flex items-start gap-2">
+                                    <strong className="text-gray-900 min-w-[80px]">Phone:</strong>
+                                    <span className="text-amber-700 font-semibold italic">9656227262</span>
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>

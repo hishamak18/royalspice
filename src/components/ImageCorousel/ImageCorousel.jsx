@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
-const images = ['/foodone.png', '/foodthree.png', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
+const images = ['/foodone.PNG', '/foodthree.PNG', '/foodfive.png', '/foodseven.png', '/foodeight.png', '/foodten.png'];
 
 const ImageCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,12 +34,11 @@ const ImageCarousel = () => {
                     key={currentIndex}
                     src={images[currentIndex]}
                     alt="Food"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                    width={500}
-                    height={500}
+                    initial={{ opacity: 0, scale: 1.1 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 1.2, ease: "easeInOut" }}
+                    className="w-full h-full object-cover rounded-2xl shadow-2xl"
                 />
             </AnimatePresence>
         </div>

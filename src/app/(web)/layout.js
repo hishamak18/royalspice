@@ -1,9 +1,17 @@
-import { Inter } from "next/font/google";
+import { Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
 import Footer from "../../components/Footer/Footer";
 import TransitionProvider from "../../components/TransitionProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: '--font-playfair',
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: '--font-outfit',
+});
 
 export const metadata = {
   title: "ROYAL SPICE RESTAURANT",
@@ -12,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${playfair.variable} ${outfit.variable}`}>
+      <body className={outfit.className}>
         <TransitionProvider>{children}
           <Footer />
         </TransitionProvider>

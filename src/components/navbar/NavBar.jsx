@@ -16,41 +16,36 @@ const NavBar = () => {
                 {/* Left side logo */}
                 <div className="flex items-center">
                     <img src="/logo.png" alt="Logo" className={`h-8 mr-2 ${styles.imglogo}`} />
-                    <span className="text-1xl  text-left md:text-1xl  font-bold mt-2 pr-2" style={{ color: 'black' }}>Royal Spice Restaurant</span>
+                    <span className="text-1xl text-left md:text-xl font-playfair font-bold mt-2 pr-2" style={{ color: 'black' }}>Royal Spice Restaurant</span>
                 </div>
 
                 {/* Hamburger menu icon for mobile */}
 
 
                 {/* Right side nav links */}
-                <ul style={{ marginRight: "50px" }} className={`flex items-center hidden sm:inline-block z-50 lg:flex ${isMenuOpen ? 'hidden' : 'lg:block'}`}>
+                <ul style={{ marginRight: "50px" }} className={`flex items-center hidden sm:inline-block z-50 lg:flex font-outfit font-medium ${isMenuOpen ? 'hidden' : 'lg:block'}`}>
                     <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="/">
+                        <Link className=" hover:text-amber-600 transition-colors" href="/">
                             Home
                         </Link>
                     </li>
                     <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="/about">
+                        <Link className=" hover:text-amber-600 transition-colors" href="/about">
                             About
                         </Link>
                     </li>
-                    {/* <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="/menu">
-                            Menu
-                        </Link>
-                    </li> */}
                     <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="/blog">
+                        <Link className=" hover:text-amber-600 transition-colors" href="/blog">
                             Blogs
                         </Link>
                     </li>
                     <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="/contact">
+                        <Link className=" hover:text-amber-600 transition-colors" href="/contact">
                             Contact
                         </Link>
                     </li>
                     <li className="mx-2">
-                        <Link className=" hover:text-gray-300" href="https://g.page/r/CZwbU8KB55P8EB0/review">
+                        <Link className=" hover:text-amber-600 transition-colors" href="https://g.page/r/CZwbU8KB55P8EB0/review">
                             Review Us
                         </Link>
                     </li>
@@ -66,11 +61,15 @@ const NavBar = () => {
 
 
             </nav>
-            <div className='bg-red-400 w-full absolute z-50 text-center text-white p-3 flex flex-wrap justify-center gap-x-4 items-center'>
+            <div className='bg-red-500 w-full relative z-40 text-center text-white p-3 flex flex-wrap justify-center gap-x-4 items-center font-outfit text-sm shadow-md'>
                 <span className="font-semibold">Table Booking & Home Delivery:</span>
-                <Link href="tel:+918086624365" className="hover:underline">Thonichal: +91 80866 24365</Link>
-                <span className="hidden md:inline">|</span>
-                <Link href="tel:+919656227262" className="hover:underline">Payyampally: +91 96562 27262</Link>
+                <Link href="tel:+918086624365" className="hover:underline flex items-center gap-1 italic">
+                    <span className="opacity-80">Thonichal:</span> +91 80866 24365
+                </Link>
+                <span className="hidden md:inline opacity-30">|</span>
+                <Link href="tel:+919656227262" className="hover:underline flex items-center gap-1 italic">
+                    <span className="opacity-80">Payyampally:</span> +91 96562 27262
+                </Link>
             </div>
         </div>
     );

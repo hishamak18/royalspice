@@ -16,19 +16,20 @@ const HeroSection = () => {
 
                     {/* Right side */}
                     <div className={`${styles.flexonee} md:w-1/2 text-center md:text-left text-black z-10 `} >
-                        <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
-                        <h2 className="text-3xl text-amber-500 text-left md:text-4xl font-bold mb-2 pr-2">Where Culinary Wonders <br /> Await</h2>
-                        <p className="text-left mb-6  text-amber-800 ">Savor exquisite flavors in an <br /> elegant setting.</p>
-                        <div className="flex flex-col gap-3" style={{ marginBottom: "50px" }}>
-                            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                        <h5 className="text-lg text-left md:text-xl font-outfit font-medium text-amber-600 tracking-wide uppercase">Exquisite Flavors</h5>
+                        <h2 className="text-4xl text-gray-900 text-left md:text-6xl font-playfair font-black mb-4 leading-tight">Where Culinary <br /><span className="text-amber-500">Wonders</span> Await</h2>
+                        <p className="text-left mb-8 text-gray-600 font-outfit text-lg max-w-md">Savor exquisite flavors in an elegant setting, crafted with passion and heritage.</p>
+                        <div className="flex flex-col gap-4" style={{ marginBottom: "50px" }}>
+                            <p className="text-sm font-outfit font-bold uppercase tracking-widest text-gray-400">Book Your Table</p>
+                            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                                 <Link href="tel:+918086624365">
-                                    <button className="bg-red-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg transition duration-300 text-sm">
-                                        Thonichal: +91 80866 24365
+                                    <button className="bg-red-500 hover:bg-gray-900 text-white font-outfit font-bold py-3 px-8 rounded-full shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl text-sm border-2 border-transparent">
+                                        Thonichal Branch
                                     </button>
                                 </Link>
                                 <Link href="tel:+919656227262">
-                                    <button className="bg-red-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg transition duration-300 text-sm">
-                                        Payyampally: +91 96562 27262
+                                    <button className="bg-transparent hover:bg-amber-500 text-amber-600 hover:text-white font-outfit font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl text-sm border-2 border-amber-500">
+                                        Payyampally Branch
                                     </button>
                                 </Link>
                             </div>
