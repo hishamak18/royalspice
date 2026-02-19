@@ -66,9 +66,12 @@ const NavBar = () => {
 
 
             </nav>
-            <Link href="tel:+918086624365">
-                <span className='bg-red-400 w-full absolute z-50 text-center text-white p-3'>For Booking  Your Table, Home delivery  contact - +918086624365 ,04935 208 365 </span>
-            </Link>
+            <div className='bg-red-400 w-full absolute z-50 text-center text-white p-3 flex flex-wrap justify-center gap-x-4 items-center'>
+                <span className="font-semibold">Table Booking & Home Delivery:</span>
+                <Link href="tel:+918086624365" className="hover:underline">Thonichal: +91 80866 24365</Link>
+                <span className="hidden md:inline">|</span>
+                <Link href="tel:+919656227262" className="hover:underline">Payyampally: +91 96562 27262</Link>
+            </div>
         </div>
     );
 };

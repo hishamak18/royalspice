@@ -19,14 +19,19 @@ const HeroSection = () => {
                         <h5 className="text-lg text-left md:text-xl font-semibold">Exquisite Flavors</h5>
                         <h2 className="text-3xl text-amber-500 text-left md:text-4xl font-bold mb-2 pr-2">Where Culinary Wonders <br /> Await</h2>
                         <p className="text-left mb-6  text-amber-800 ">Savor exquisite flavors in an <br /> elegant setting.</p>
-                        <div style={{ marginBottom: "50px" }}>
-
-                            <Link href="tel:+918086624365" >
-                                <button className="flex justify-start items-center bg-red-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg linkbokk" >
-
-                                    Book Your Table :+91 8086 624 365 ,0493 520 8365
-                                </button>
-                            </Link>
+                        <div className="flex flex-col gap-3" style={{ marginBottom: "50px" }}>
+                            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                                <Link href="tel:+918086624365">
+                                    <button className="bg-red-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg transition duration-300 text-sm">
+                                        Thonichal: +91 80866 24365
+                                    </button>
+                                </Link>
+                                <Link href="tel:+919656227262">
+                                    <button className="bg-red-400 hover:bg-amber-500 text-white font-semibold py-2 px-6 rounded shadow-lg transition duration-300 text-sm">
+                                        Payyampally: +91 96562 27262
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     {/* <div className={`${styles.lstImg} `}>
