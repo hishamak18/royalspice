@@ -29,7 +29,7 @@ const HeroSection = () => {
                                 </Link>
                                 <Link href="tel:+919656227262">
                                     <button className="bg-transparent hover:bg-amber-500 text-amber-600 hover:text-white font-outfit font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl text-sm border-2 border-amber-500">
-                                        Payyampally Branch
+                                        Koyileri Branch
                                     </button>
                                 </Link>
                             </div>

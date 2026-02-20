@@ -68,7 +68,7 @@ const NavBar = () => {
                 </Link>
                 <span className="hidden md:inline opacity-30">|</span>
                 <Link href="tel:+919656227262" className="hover:underline flex items-center gap-1 italic">
-                    <span className="opacity-80">Payyampally:</span> +91 96562 27262
+                    <span className="opacity-80">Koyileri:</span> +91 96562 27262
                 </Link>
             </div>
         </div>

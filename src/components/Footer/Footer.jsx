@@ -75,7 +75,7 @@ const Footer = () => {
                             <div className="w-8 h-8 bg-amber-500/20 rounded-full flex items-center justify-center">
                                 <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
                             </div>
-                            <h3 className="text-2xl font-playfair font-bold text-amber-500">Payyampally Branch</h3>
+                            <h3 className="text-2xl font-playfair font-bold text-amber-500">Koyileri Branch</h3>
                         </div>
 
                         <div className="space-y-4 mb-8 font-outfit text-gray-300">
@@ -84,7 +84,7 @@ const Footer = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
-                                <p>Post, Thannikkal, Payyampally, Mananthavady, Kerala 670646</p>
+                                <p>Post, Thannikkal, Koyileri, Mananthavady, Kerala 670646</p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <svg className="w-5 h-5 text-amber-500 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

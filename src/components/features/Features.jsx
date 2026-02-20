@@ -9,7 +9,7 @@ const Features = () => {
         {
             icon: faTruck,
             title: "Home Delivery",
-            description: "Thonichal: 8086624365\nPayyampally: 9656227262",
+            description: "Thonichal: 8086624365\nKoyileri: 9656227262",
             color: "amber"
         },
         {

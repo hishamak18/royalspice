@@ -66,7 +66,7 @@ const ContactSection = () => {
                             <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
                                 <span className="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></span>
                             </div>
-                            <h3 className="text-2xl font-playfair font-bold text-gray-900 border-b-2 border-amber-500/20 pb-1">Payyampally Branch (New)</h3>
+                            <h3 className="text-2xl font-playfair font-bold text-gray-900 border-b-2 border-amber-500/20 pb-1">Koyileri Branch (New)</h3>
                         </div>
 
                         <div className="space-y-6 font-outfit">
@@ -79,7 +79,7 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Address</p>
-                                    <p className="text-gray-700 leading-relaxed text-lg">Post, Thannikkal, Payyampally, Mananthavady, Kerala 670646</p>
+                                    <p className="text-gray-700 leading-relaxed text-lg">Post, Thannikkal, Koyileri, Mananthavady, Kerala 670646</p>
                                 </div>
                             </div>
 
