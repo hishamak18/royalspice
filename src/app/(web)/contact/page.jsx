@@ -12,7 +12,7 @@ const ContactPage = () => {
             {/* Hero Section for Contact Page */}
             <div className="bg-amber-500 py-20 text-white text-center mb-12">
                 <h1 className="text-5xl md:text-7xl font-playfair font-black mb-4">Contact Us</h1>
-                <p className="text-xl font-outfit opacity-90 max-w-2xl mx-auto px-4">Find us at our two prime locations in Wayanad. We're ready to serve you the best flavors.</p>
+                <p className="text-xl font-outfit opacity-90 max-w-2xl mx-auto px-4">Find us at our two prime locations in Wayanad. We&apos;re ready to serve you the best flavors.</p>
             </div>
 
             <Contact />
