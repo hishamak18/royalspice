@@ -5,80 +5,87 @@ import { faParking, faTruck, faUsers, faUtensils } from '@fortawesome/free-solid
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './features.module.css'
 const Features = () => {
-    return (
-        <section className="relative  px-10" >
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/herobg.png')", opacity: 0.10 }}></div>
-            <h1 className="mb-2 text-2xl text-red-500 font-bold text-black text-center pt-20" > We Provide.</h1>
+    const features = [
+        {
+            icon: faTruck,
+            title: "Home Delivery",
+            description: "Thonichal: 8086624365\nPayyampally: 9656227262",
+            color: "amber"
+        },
+        {
+            icon: faUsers,
+            title: "Family Friendly",
+            description: "A warm, welcoming atmosphere perfect for family gatherings and celebrations.",
+            color: "amber"
+        },
+        {
+            icon: faParking,
+            title: "Parking Facility",
+            description: "Spacious and secure parking available for all our guests at both branches.",
+            color: "amber"
+        },
+        {
+            icon: faUtensils,
+            title: "Tasty Cuisine",
+            description: "Authentic flavors crafted with the finest ingredients and culinary expertise.",
+            color: "amber"
+        }
+    ];
 
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 relative z-10 ">
-                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
-                    <motion.div
-                        key="jf"
-                        className='bg-red-300 p-5 rounded'
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+    return (
+        <section className="relative py-24 px-6 overflow-hidden bg-gray-50">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+                style={{ backgroundImage: "url('/herobg.png')", backgroundSize: '400px' }}></div>
+
+            <div className="container mx-auto relative z-10">
+                <div className="text-center mb-20">
+                    <motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-amber-600 font-outfit font-bold uppercase tracking-widest text-sm mb-4 block"
                     >
-                        <div className={`bg-red-300 p-5 rounded ${styles.featureContainer} `}>
-                            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                <FontAwesomeIcon icon={faTruck} className="w-5 h-5 text-white lg:w-6 lg:h-6 dark:text-yellow-500" />
-                            </div>
-                            <h3 className="mb-2 text-1xl font-bold text-white leading-relaxed"> Home Delivery <br />Thonichal: 8086624365 <br />Payyampally: 9656227262</h3>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        key="jfs"
-                        className='bg-yellow-300 p-5 rounded '
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+                        Our Services
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-4xl md:text-5xl font-playfair font-black text-gray-900"
                     >
-                        <div className={`bg-yellow-300 p-5 rounded ${styles.featureContainer} `}>
-                            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                <FontAwesomeIcon icon={faUsers} className="w-5 h-5 text-white lg:w-6 lg:h-6 dark:text-yellow-500" />
+                        Experience the <span className="text-amber-500">Royal</span> Difference
+                    </motion.h2>
+                    <div className="w-24 h-1.5 bg-amber-500 mx-auto mt-6 rounded-full"></div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            whileHover={{ y: -10 }}
+                            className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group"
+                        >
+                            <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-6 border border-amber-100 group-hover:bg-amber-500 transition-colors duration-300">
+                                <FontAwesomeIcon
+                                    icon={feature.icon}
+                                    className="text-2xl text-amber-600 group-hover:text-white transition-colors duration-300"
+                                />
                             </div>
-                            <h3 className="mb-2 text-1xl font-bold text-white text-center">Family-Friendly Atmosphere</h3>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        key="jfs"
-                        className='bg-green-300 p-5 rounded '
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <div className={`bg-green-300 p-5 rounded ${styles.featureContainer} `}>
-                            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                <FontAwesomeIcon icon={faParking} className="w-5 h-5 text-white lg:w-6 lg:h-6 dark:text-yellow-500" />
-                            </div>
-                            <h3 className="mb-2 text-1xl font-bold text-white">Parking facility</h3>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        key="jsf"
-                        className='bg-orange-300 p-5 rounded'
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <div className={`bg-orange-300 p-5 rounded ${styles.featureContainer} `}>
-                            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                <FontAwesomeIcon icon={faUtensils} className="w-5 h-5 text-white lg:w-6 lg:h-6 dark:text-yellow-500" />
-                            </div>
-                            <h3 className="mb-2 text-1xl font-bold text-white"> Tasty Cuisine</h3>
-                        </div>
-                    </motion.div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4 font-playfair">{feature.title}</h3>
+                            <p className="text-gray-600 font-outfit leading-relaxed whitespace-pre-line">
+                                {feature.description}
+                            </p>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
-        </section >
+        </section>
     );
 };
 

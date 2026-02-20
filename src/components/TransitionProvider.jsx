@@ -1,52 +1,47 @@
 "use client";
 
-import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import NavBar from "./navbar/NavBar";
 import FixedIcon from "./fixedIcon/FixedIcon";
 import BottomNav from "./bottomnav/BottomNav";
-import Footer from "./Footer/Footer";
 
 const TransitionProvider = ({ children }) => {
     const pathName = usePathname();
 
     return (
-        <AnimatePresence mode="wait">
-            <div
-                key={pathName}
-                className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100"
+        <div className="relative min-h-screen">
+            {/* Professional Top Progress Bar */}
+            <motion.div
+                key={`progress-${pathName}`}
+                className="fixed top-0 left-0 right-0 h-1 bg-amber-500 z-[9999] origin-left"
+                initial={{ scaleX: 0, opacity: 1 }}
+                animate={{ scaleX: 1, opacity: 0 }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    opacity: { delay: 0.6, duration: 0.2 }
+                }}
+            />
 
-            >
-                <motion.div
-                    className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
-                    animate={{ height: "0vh" }}
-                    exit={{ height: "140vh" }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
+            <NavBar />
+            <FixedIcon />
 
-                />
-                <motion.div
-                    className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default z-50 w-fit h-fit"
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+            <AnimatePresence mode="wait">
+                <motion.main
+                    key={pathName}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="min-h-[calc(100vh-120px)]" // Ensuring min height without breaking scroll
                 >
-                    {pathName.substring(1)}
-                </motion.div>
-                <motion.div
-                    className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"
-                    initial={{ height: "140vh" }}
-                    animate={{ height: "0vh", transition: { delay: 0.5 } }}
-                />
-                <div className="">
-                    <NavBar />
-                    <FixedIcon />
-                    <div className="h-[calc(100vh-6rem)]">{children}</div>
-                    <BottomNav />
-                </div>
-            </div>
-        </AnimatePresence>
+                    {children}
+                </motion.main>
+            </AnimatePresence>
+
+            <BottomNav />
+        </div>
     );
 };
 
