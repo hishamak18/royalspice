@@ -29,8 +29,6 @@ const Gallery = () => {
         const getGalleryImages = async () => {
             const data = await fetchGallery();
             setGalleryImages(data[0].images);
-            console.log(galleryImages);
-            console.log(data);
         };
         getGalleryImages();
     }, []);

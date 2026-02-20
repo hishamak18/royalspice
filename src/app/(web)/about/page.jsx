@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import Image from 'next/image';
+
 const AboutPage = () => {
     return (
         <section className="bg-white px-6 md:px-10 py-12 md:py-24 overflow-hidden">
@@ -31,7 +33,7 @@ const AboutPage = () => {
                                 Nestled in the heart of Wayanad, our restaurant offers a luxurious ambiance and impeccable service, making every visit a memorable one. Our chefs use tradition-honored recipes and the freshest local ingredients to craft dishes that tell a story of heritage and passion.
                             </p>
                             <p>
-                                Royal Spice has become a cornerstone of the community, known for our commitment to quality and passion for excellence. Whether you're here for a romantic dinner, a family celebration, or a casual lunch, we provide a warm and inviting atmosphere for all occasions.
+                                Royal Spice has become a cornerstone of the community, known for our commitment to quality and passion for excellence. Whether you&apos;re here for a romantic dinner, a family celebration, or a casual lunch, we provide a warm and inviting atmosphere for all occasions.
                             </p>
                             <p>
                                 We are proud of our team of dedicated professionals who strive to provide the best service and create a dining experience that is second to none. Thank you for choosing Royal Spice. We look forward to serving you.
@@ -66,11 +68,15 @@ const AboutPage = () => {
                                 className="col-span-8 md:pt-12"
                             >
                                 <div className="relative group">
-                                    <img
-                                        className="w-full h-[350px] md:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
-                                        src="https://live.staticflickr.com/65535/55105647094_7d136a14cc_b.jpg"
-                                        alt="Royal Spice Restaurant Front"
-                                    />
+                                    <div className="relative w-full h-[350px] md:h-[500px]">
+                                        <Image
+                                            className="object-cover rounded-2xl md:rounded-3xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
+                                            src="https://live.staticflickr.com/65535/55105647094_7d136a14cc_b.jpg"
+                                            alt="Royal Spice Restaurant Front"
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    </div>
                                     <div className="absolute inset-0 rounded-2xl md:rounded-3xl ring-1 ring-inset ring-black/10"></div>
                                 </div>
                             </motion.div>
@@ -84,11 +90,15 @@ const AboutPage = () => {
                                 className="col-span-7 md:col-span-6 -ml-12 md:-ml-16 -mt-20 md:-mt-32 relative z-20"
                             >
                                 <div className="relative group p-1.5 md:p-2 bg-white rounded-2xl md:rounded-3xl shadow-2xl">
-                                    <img
-                                        className="w-full h-[220px] md:h-[300px] object-cover rounded-xl md:rounded-2xl transition-transform duration-700 group-hover:scale-110"
-                                        src="https://live.staticflickr.com/65535/55105647104_1c399cca72_b.jpg"
-                                        alt="Restaurant Entrance"
-                                    />
+                                    <div className="relative w-full h-[220px] md:h-[300px]">
+                                        <Image
+                                            className="object-cover rounded-xl md:rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                                            src="https://live.staticflickr.com/65535/55105647104_1c399cca72_b.jpg"
+                                            alt="Restaurant Entrance"
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    </div>
                                     <div className="absolute inset-0 rounded-xl md:rounded-2xl ring-1 ring-inset ring-black/10"></div>
                                 </div>
                             </motion.div>
