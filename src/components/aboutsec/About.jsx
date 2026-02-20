@@ -47,26 +47,26 @@ const About = () => {
                     </motion.div>
 
                     {/* Right Side: Visuals */}
-                    <div className="relative">
+                    <div className="relative mt-20 lg:mt-0">
                         {/* Decorative Background Element */}
-                        <div className="absolute -top-10 -right-10 w-64 h-64 bg-amber-50 rounded-full blur-3xl opacity-50"></div>
+                        <div className="absolute -top-10 -right-10 w-48 md:w-64 h-48 md:h-64 bg-amber-50 rounded-full blur-3xl opacity-50"></div>
 
-                        <div className="relative z-10 grid grid-cols-12 gap-4">
+                        <div className="relative z-10 grid grid-cols-12 gap-2 md:gap-4 px-4 sm:px-0">
                             {/* Main Larger Image */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8 }}
-                                className="col-span-8 pt-12"
+                                className="col-span-8 md:pt-12"
                             >
                                 <div className="relative group">
                                     <img
-                                        className="w-full h-[500px] object-cover rounded-3xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
+                                        className="w-full h-[350px] md:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
                                         src="https://live.staticflickr.com/65535/55105647094_7d136a14cc_b.jpg"
                                         alt="Royal Spice Restaurant Front"
                                     />
-                                    <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-black/10"></div>
+                                    <div className="absolute inset-0 rounded-2xl md:rounded-3xl ring-1 ring-inset ring-black/10"></div>
                                 </div>
                             </motion.div>
 
@@ -76,15 +76,15 @@ const About = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
-                                className="col-span-6 -ml-16 -mt-32 relative z-20"
+                                className="col-span-7 md:col-span-6 -ml-12 md:-ml-16 -mt-20 md:-mt-32 relative z-20"
                             >
-                                <div className="relative group p-2 bg-white rounded-3xl shadow-2xl">
+                                <div className="relative group p-1.5 md:p-2 bg-white rounded-2xl md:rounded-3xl shadow-2xl">
                                     <img
-                                        className="w-full h-[300px] object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                                        className="w-full h-[220px] md:h-[300px] object-cover rounded-xl md:rounded-2xl transition-transform duration-700 group-hover:scale-110"
                                         src="https://live.staticflickr.com/65535/55105647104_1c399cca72_b.jpg"
                                         alt="Restaurant Entrance"
                                     />
-                                    <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10"></div>
+                                    <div className="absolute inset-0 rounded-xl md:rounded-2xl ring-1 ring-inset ring-black/10"></div>
                                 </div>
                             </motion.div>
                         </div>
@@ -95,10 +95,10 @@ const About = () => {
                             whileInView={{ opacity: 1, rotate: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.4 }}
-                            className="absolute bottom-10 right-0 bg-amber-500 text-white p-6 rounded-2xl shadow-xl z-30 hidden md:block"
+                            className="absolute -bottom-6 md:bottom-10 right-0 bg-amber-500 text-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-xl z-30"
                         >
-                            <p className="font-playfair font-black text-2xl">Serving</p>
-                            <p className="font-outfit text-sm uppercase tracking-widest opacity-90">Excellence Since 2014</p>
+                            <p className="font-playfair font-black text-xl md:text-2xl">Serving</p>
+                            <p className="font-outfit text-[10px] md:text-sm uppercase tracking-widest opacity-90">Excellence Since 2014</p>
                         </motion.div>
                     </div>
                 </div>
