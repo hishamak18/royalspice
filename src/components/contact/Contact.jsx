@@ -94,7 +94,7 @@ const ContactSection = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Address</p>
-                                    <p className="text-gray-700 leading-relaxed text-lg">Post, Thannikkal, Koyileri, Mananthavady, Kerala 670646</p>
+                                    <p className="text-gray-700 leading-relaxed text-lg">koyileri, thannikkal, panamaram Rd, Mananthavady, kerala 670646</p>
                                 </div>
                             </div>
 
@@ -108,6 +108,7 @@ const ContactSection = () => {
                                     <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Phone</p>
                                     <div className="flex flex-col gap-1">
                                         <a href="tel:9656227262" className="text-amber-700 font-bold text-xl hover:text-amber-800 transition-colors">9656227262</a>
+                                        <a href="tel:9656227244" className="text-amber-700 font-bold text-xl hover:text-amber-800 transition-colors">9656227244</a>
                                     </div>
                                 </div>
                             </div>

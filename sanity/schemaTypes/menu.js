@@ -1,16 +1,18 @@
 export const menuImages = {
     name: 'menuImages',
-    title: 'menu',
+    title: 'Menu',
     type: 'document',
     fields: [
         {
             name: 'name',
-            title: 'Name',
+            title: 'Branch Name',
+            description: 'e.g., Thonichal Branch or Koyileri Branch',
             type: 'string',
         },
         {
             name: 'slug',
             title: 'Slug',
+            description: 'Set to thonichal-menu or koyileri-menu',
             type: 'slug',
             options: {
                 source: 'name',
@@ -18,38 +20,29 @@ export const menuImages = {
             },
         },
         {
-            name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
-            fields: [
+            name: 'images',
+            title: 'Menu Images',
+            description: 'Add all pages of the menu for this branch',
+            type: 'array',
+            of: [
                 {
-                    name: 'alt',
-                    type: 'string',
-                    title: 'Alternative Text',
+                    type: 'image',
+                    options: {
+                        hotspot: true,
+                    },
+                    fields: [
+                        {
+                            name: 'alt',
+                            type: 'string',
+                            title: 'Alternative Text',
+                        }
+                    ]
                 }
             ]
         },
         {
-            name: 'imagetwo',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
-            fields: [
-                {
-                    name: 'alt',
-                    type: 'string',
-                    title: 'Alternative Text',
-                }
-            ]
-        },
-        {
-            name: 'bio',
-            title: 'Bio',
+            name: 'description',
+            title: 'Description',
             type: 'array',
             of: [
                 {
@@ -64,7 +57,7 @@ export const menuImages = {
     preview: {
         select: {
             title: 'name',
-            media: 'image',
+            media: 'images.0',
         },
     },
 }

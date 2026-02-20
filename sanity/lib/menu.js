@@ -2,14 +2,14 @@
 import client from './client'
 
 export const fetchMenuImages = async () => {
-    const query = `*[_type == "menuImages"]{
+  const query = `*[_type == "menuImages"]{
     name,
     "slug": slug.current,
-    "imageUrl": image.asset->url,
-    "imageAlt": image.alt,
-    "imageTwoUrl": imagetwo.asset->url,
-    "imageTwoAlt": imagetwo.alt,
-    bio
+    "images": images[]{
+      "url": asset->url,
+      alt
+    },
+    description
   }`
-    return await client.fetch(query)
+  return await client.fetch(query)
 }

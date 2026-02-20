@@ -5,7 +5,7 @@ const nextConfig = {
             "mega.nz",
             "live.staticflickr.com",
             "res.cloudinary.com",
-            "lh3.googleusercontent.com", "images.pexels.com"],
+            "lh3.googleusercontent.com", "images.pexels.com", "cdn.sanity.io"],
     },
 };
 
