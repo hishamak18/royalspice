@@ -5,12 +5,12 @@ import Link from "next/link";
 const HeroSection = () => {
     return (
         <div className="relative">
-            <div className="bg-cover bg-center min-h-screen relative flex items-center py-20 md:py-0" style={{ backgroundImage: "url('/herobg.png')" }}>
+            <div className="bg-cover bg-center h-auto md:min-h-screen relative flex items-center py-12 md:py-0" style={{ backgroundImage: "url('/herobg.png')" }}>
                 <div className="absolute inset-0 bg-white bg-opacity-80"></div>
-                <div className={`${styles.gappens} px-4 md:px-15 container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-12 relative py-12 md:py-0`}>
-                    <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-10 z-10 `}>
+                <div className={`${styles.gappens} px-4 md:px-15 container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-12 relative py-8 md:py-0`}>
+                    <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-0 md:left-10 z-10 mx-auto right-0 md:right-auto`}>
                     </div>
-                    <div className={`md:w-1/2 flex justify-center items-center z-10 relative`}>
+                    <div className="w-full md:w-1/2 flex justify-center items-center z-20 relative">
                         <ImageCarousel />
                     </div>
 
@@ -19,7 +19,7 @@ const HeroSection = () => {
                         <h5 className="text-lg text-left md:text-xl font-outfit font-medium text-amber-600 tracking-wide uppercase">Exquisite Flavors</h5>
                         <h2 className="text-4xl text-gray-900 text-left md:text-6xl font-playfair font-black mb-4 leading-tight">Where Culinary <br /><span className="text-amber-500">Wonders</span> Await</h2>
                         <p className="text-left mb-8 text-gray-600 font-outfit text-lg max-w-md">Savor exquisite flavors in an elegant setting, crafted with passion and heritage.</p>
-                        <div className="flex flex-col gap-4" style={{ marginBottom: "50px" }}>
+                        <div className="flex flex-col gap-4 mb-10 md:mb-0">
                             <p className="text-sm font-outfit font-bold uppercase tracking-widest text-gray-400">Book Your Table</p>
                             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                                 <Link href="tel:+918086624365">

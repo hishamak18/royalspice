@@ -26,7 +26,7 @@ const ImageCarousel = () => {
     const translateX = useTransform(scrollYProgress, [0, 1], [0, 850]);
 
     return (
-        <div className="overflow-hidden h-[300px] md:h-[500px]">
+        <div className="overflow-hidden h-[300px] md:h-[500px] w-full max-w-[500px] mx-auto">
 
 
             <AnimatePresence>

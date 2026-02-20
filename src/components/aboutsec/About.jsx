@@ -5,7 +5,7 @@ import styles from './about.module.css'
 
 const About = () => {
     return (
-        <section className="relative py-24 px-6 overflow-hidden bg-white">
+        <section className="relative py-12 md:py-24 px-6 overflow-hidden bg-white">
             <div className="container mx-auto max-w-screen-xl">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Side: Content */}

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import styles from './contact.module.css'
 const ContactSection = () => {
     return (
-        <div style={{ paddingBottom: "150px", paddingTop: "150px" }} className={`${styles.cntctContainer} py-12 bg-white`}>
+        <div className={`${styles.cntctContainer} py-8 md:py-16 bg-white`}>
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-playfair font-black text-center mb-12 text-gray-900 section-title">Our Locations</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -53,9 +53,24 @@ const ContactSection = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="mt-8 pt-6 border-t border-amber-50">
+                            <a
+                                href="https://www.google.com/maps/dir//Royal+Spice+Restaurant+Thonichal+Mananthavady+Kerala+670645/@11.7702036,76.0020805,17z/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full"
+                            >
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Get Directions
+                            </a>
+                        </div>
                     </motion.div>
 
-                    {/* Payyampally Branch */}
+                    {/* Koyileri Branch */}
                     <motion.div
                         className="bg-white rounded-2xl shadow-xl p-8 border border-amber-100 hover:shadow-2xl transition-all duration-300"
                         initial={{ opacity: 0, y: 20 }}
@@ -96,6 +111,21 @@ const ContactSection = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="mt-8 pt-6 border-t border-amber-50">
+                            <a
+                                href="https://www.google.com/maps/dir//Royal+Spice+Restaurant+Koyileri+Mananthavady+Kerala+670646/@11.7910247,76.0428768,17z/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full"
+                            >
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Get Directions
+                            </a>
                         </div>
                     </motion.div>
                 </div>
