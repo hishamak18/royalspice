@@ -1,3 +1,6 @@
+'use client';
+
+import styles from './footer.module.css';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
