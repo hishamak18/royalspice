@@ -44,11 +44,10 @@
     .gappens {
         gap: 0;
         justify-content: center;
-        overflow: hidden;
     }
 
     .flexonee {
-        margin: 0 54px;
+        margin: 0 20px;
     }
 }
 

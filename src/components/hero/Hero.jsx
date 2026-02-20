@@ -5,9 +5,9 @@ import Link from "next/link";
 const HeroSection = () => {
     return (
         <div className="relative">
-            <div className="bg-cover bg-center h-screen relative" style={{ backgroundImage: "url('/herobg.png')" }}>
+            <div className="bg-cover bg-center min-h-screen relative flex items-center py-20 md:py-0" style={{ backgroundImage: "url('/herobg.png')" }}>
                 <div className="absolute inset-0 bg-white bg-opacity-80"></div>
-                <div className={`${styles.gappens} px-15 container mx-auto flex flex-col md:flex-row items-center justify-between md:justify-start gap-0 h-full relative`}>
+                <div className={`${styles.gappens} px-4 md:px-15 container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-12 relative py-12 md:py-0`}>
                     <div className={`${styles.recta} absolute md:w-1/2 md:h-1/2 top-0 left-10 z-10 `}>
                     </div>
                     <div className={`md:w-1/2 flex justify-center items-center z-10 relative`}>
